@@ -1,10 +1,17 @@
 import Image from "next/image";
-import config from "@/tailwind.config";
+import Hero from "./components/landing-page/hero";
+import Header from "./components/landing-page/header";
 
 export default function Home() {
   return (
-    <div className="bg-background_primary text-white">
-      Hello World
+    <div className=" max-w-7xl mx-auto border border-border-primary">
+     <Header />
+     <Hero />
+     {/* 
+      <Hero />
+      <VideoExplanation/>
+      <Pricing/>
+      <Explanation/> */}
     </div>
   );
 }
